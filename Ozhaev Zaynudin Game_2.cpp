@@ -72,7 +72,7 @@ void MoveBall()
 
     int dt = 1;
     int F4_Col = 0;
-    double ax = 0, ay = 0.9;
+    double ax = 0.5, ay = 0.5;
     int score1 = 0, score2 = 0;
 
     HDC Fon = txLoadImage ("Pictures\\Fon.bmp");
@@ -185,8 +185,8 @@ void Ball::Physics (int* score1, int* score2, int ax, int ay, int dt)
     if (vy < -15) vy = -15;
     if (vx < -15) vx = -15;
 
-    vx = vx + ROUND(ax * dt);
-    vy = vy + ROUND(ay * dt);
+    vx = vx + ROUND (ax * dt);
+    vy = vy + ROUND (ay * dt);
 
 
     (*this) .x += (*this) .vx * dt;
