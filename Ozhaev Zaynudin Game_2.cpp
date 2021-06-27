@@ -209,13 +209,13 @@ void Ball::Physics (int* score1, int* score2, int ax, int ay, int dt)
         vx = - vx;
          x = W_org - r;
 
-        if (pl == 0)
+        /*if (pl == 0)
             {
             ++(*score1);
             x = W/2; vx = 1 + rand() % 9; vy = 1 + rand() % 9;
             txPlaySound ("sounds/zvuk-krika-gol.wav");
             Sleep (200);
-            }
+            }*/
         }
 
     if (y > H - r)
@@ -229,13 +229,13 @@ void Ball::Physics (int* score1, int* score2, int ax, int ay, int dt)
         vx = - vx;
          x = W_org_2 + r;
 
-        if ( pl == 0)
+        /*if ( pl == 0)
             {
             ++(*score2);
             x = W/2; vx = 1 + rand() % 9; vy = 1 + rand() % 9;
             txPlaySound ("sounds/zvuk-krika-gol.wav");
             Sleep (200);
-            }
+            } */
         }
 
     if (y < 50 + r)
