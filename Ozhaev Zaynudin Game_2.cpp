@@ -89,17 +89,17 @@ void MoveBall()
         //printf ("In CraziBall(): vx = %d and vy = %d\n", vx2, vy2);
 
         plaer1 .Control (&ball1, &F4_Col);
-        plaer2 .Control (&ball2, &F4_Col);
+        //plaer2 .Control (&ball2, &F4_Col);
 
-        ball1 .Physics (&score1, &score2, ax, ay, dt);
-        ball2 .Physics (&score1, &score2, ax, ay, dt);
+        //ball1 .Physics (&score1, &score2, ax, ay, dt);
+        //ball2 .Physics (&score1, &score2, ax, ay, dt);
         ball3 .Physics (&score1, &score2, ax, ay, dt);
 
-        CollisionBall (&ball1, &ball3);//проверка столкновения
-        CollisionBall (&ball2, &ball3);
+        //CollisionBall (&ball1, &ball3);//проверка столкновения
+        //CollisionBall (&ball2, &ball3);
 
-        ball1.Drow();
-        ball2.Drow();
+        //ball1.Drow();
+        //ball2.Drow();
         ball3.Drow();
 
         ScoreDraw (score1, score2);
@@ -180,10 +180,10 @@ void Ball::Physics (int* score1, int* score2, double ax, double ay, int dt)
     int W_org   = W;
     int W_org_2 = 0;
 
-    if (vy >  25) vy =  25;//ограничение на скорость движения
+    /*if (vy >  25) vy =  25;//ограничение на скорость движения
     if (vx >  25) vx =  25;
     if (vy < -25) vy = -25;
-    if (vx < -25) vx = -25;
+    if (vx < -25) vx = -25;*/
 
     vx = vx + ROUND (ax * dt);
     vy = vy + ROUND (ay * dt);
