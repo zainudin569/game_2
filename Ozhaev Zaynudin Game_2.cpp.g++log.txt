@@ -1,13 +1,29 @@
+C:\Users\zainu\Desktop\курс\game_2\Ozhaev Zaynudin Game_2.cpp: In function 'void MoveBall()':
+C:\Users\zainu\Desktop\курс\game_2\Ozhaev Zaynudin Game_2.cpp:75:12: warning: unused variable 'ax' [-Wunused-variable]
+     double ax = 0, ay = 0.5;
+            ^
+C:\Users\zainu\Desktop\курс\game_2\Ozhaev Zaynudin Game_2.cpp:75:20: warning: unused variable 'ay' [-Wunused-variable]
+     double ax = 0, ay = 0.5;
+                    ^
+In file included from c:\users\zainu\desktop\курс\codeblocks\mingw\include\txlib.h:1:0,
+                 from C:\Users\zainu\Desktop\курс\game_2\Ozhaev Zaynudin Game_2.cpp:1:
+C:\Users\zainu\Desktop\курс\game_2\Ozhaev Zaynudin Game_2.cpp: In member function 'void Ball::Physics(int*, int*, int)':
+C:\Users\zainu\Desktop\курс\game_2\Ozhaev Zaynudin Game_2.cpp:188:21: error: 'ax' was not declared in this scope
+     vx = vx + ROUND(ax * dt);
+                     ^
+C:\Users\zainu\Desktop\курс\game_2\Ozhaev Zaynudin Game_2.cpp:189:21: error: 'ay' was not declared in this scope
+     vy = vy + ROUND(ay * dt);
+                     ^
 C:\Users\zainu\Desktop\курс\game_2\Ozhaev Zaynudin Game_2.cpp: In function 'void CollisionBall(Ball*, Ball*)':
-C:\Users\zainu\Desktop\курс\game_2\Ozhaev Zaynudin Game_2.cpp:249:48: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+C:\Users\zainu\Desktop\курс\game_2\Ozhaev Zaynudin Game_2.cpp:254:48: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
       double d = sqrt (Dx*Dx + Dy*Dy); if (d == 0) d = 0.01; // гипотенуза
                                                 ^
-C:\Users\zainu\Desktop\курс\game_2\Ozhaev Zaynudin Game_2.cpp:260:28: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+C:\Users\zainu\Desktop\курс\game_2\Ozhaev Zaynudin Game_2.cpp:265:28: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
          if ((Vn1 - Vn2) == 0) Vn1 = Vn1 + 0.01;
                             ^
-C:\Users\zainu\Desktop\курс\game_2\Ozhaev Zaynudin Game_2.cpp:274:44: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+C:\Users\zainu\Desktop\курс\game_2\Ozhaev Zaynudin Game_2.cpp:279:44: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
          d = sqrt (Dx*Dx + Dy*Dy); if (d == 0) d=0.01;
                                             ^
 ---------------------------------------------------------------------------------------------
-[27.06.2021 10:51:36,78 C:\Users\zainu@DESKTOP-ZAINU, returned 0]
+[27.06.2021 10:55:58,70 C:\Users\zainu@DESKTOP-ZAINU, returned 1]
 C:\Users\zainu\Desktop\курс\game_2> g++.exe "C:\Users\zainu\Desktop\курс\game_2\Ozhaev Zaynudin Game_2.cpp" -o "C:\Users\zainu\Desktop\курс\game_2\Ozhaev Zaynudin Game_2.exe"  -Wshadow -Winit-self -Wredundant-decls -Wcast-align -Wundef -Wfloat-equal -Winline -Wunreachable-code -Wmissing-declarations -Wmissing-include-dirs -Wswitch-enum -Wswitch-default -Weffc++ -Wmain -Wextra -Wall -g -pipe -fexceptions -Wcast-qual -Wconversion -Wctor-dtor-privacy -Wempty-body -Wformat-security -Wformat=2 -Wignored-qualifiers -Wlogical-op -Wmissing-field-initializers -Wnon-virtual-dtor -Woverloaded-virtual -Wpointer-arith -Wsign-promo -Wstack-usage=8192 -Wstrict-aliasing -Wstrict-null-sentinel -Wtype-limits -Wwrite-strings -D_DEBUG -D_EJUDGE_CLIENT_SIDE -D_EJC

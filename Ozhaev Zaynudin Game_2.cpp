@@ -72,6 +72,7 @@ void MoveBall()
 
     int dt = 1;
     int F4_Col = 0;
+    double ax = 0, ay = 0.5;
     int score1 = 0, score2 = 0;
 
     HDC Fon = txLoadImage ("Pictures\\Fon.bmp");
@@ -97,8 +98,8 @@ void MoveBall()
         CollisionBall (&ball1, &ball3);//проверка столкновения
         CollisionBall (&ball2, &ball3);
 
-        ball1.Drow();
-        ball2.Drow();
+        //ball1.Drow();
+        //ball2.Drow();
         ball3.Drow();
 
         ScoreDraw (score1, score2);
@@ -183,6 +184,10 @@ void Ball::Physics (int* score1, int* score2, int dt)
     if (vx >  15) vx =  15;
     if (vy < -15) vy = -15;
     if (vx < -15) vx = -15;
+
+    vx = vx + ROUND(ax * dt);
+    vy = vy + ROUND(ay * dt);
+
 
     (*this) .x += (*this) .vx * dt;
     (*this) .y += (*this) .vy * dt;
