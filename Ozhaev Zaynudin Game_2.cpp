@@ -180,10 +180,10 @@ void Ball::Physics (int* score1, int* score2, double ax, double ay, int dt)
     int W_org   = W;
     int W_org_2 = 0;
 
-    /*if (vy >  15) vy =  15;//ограничение на скорость движения
+    if (vy >  15) vy =  15;//ограничение на скорость движения
     if (vx >  15) vx =  15;
     if (vy < -15) vy = -15;
-    if (vx < -15) vx = -15;*/
+    if (vx < -15) vx = -15;
 
     vx = vx + ROUND (ax * dt);
     vy = vy + ROUND (ay * dt);
