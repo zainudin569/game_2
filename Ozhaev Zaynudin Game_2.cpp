@@ -39,7 +39,7 @@ struct Ball
     COLORREF Color;
     COLORREF FillColor;
 
-    void Physics (int* score1, int* score2, int ax, int ay, int dt);
+    void Physics (int* score1, int* score2, double ax, double ay, int dt);
     void Drow();
     };
 
@@ -175,15 +175,15 @@ void Key::Control (Ball* ball, int* F4_Col)
 
 //---------------------------------------------------------------------------------
 
-void Ball::Physics (int* score1, int* score2, int ax, int ay, int dt)
+void Ball::Physics (int* score1, int* score2, double ax, double ay, int dt)
     {
     int W_org   = W;
     int W_org_2 = 0;
 
-    /*if (vy >  15) vy =  15;//ограничение на скорость движения
+    if (vy >  15) vy =  15;//ограничение на скорость движения
     if (vx >  15) vx =  15;
     if (vy < -15) vy = -15;
-    if (vx < -15) vx = -15;*/
+    if (vx < -15) vx = -15;
 
     vx = vx + ROUND (ax * dt);
     vy = vy + ROUND (ay * dt);
