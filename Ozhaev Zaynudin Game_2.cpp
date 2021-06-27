@@ -72,7 +72,7 @@ void MoveBall()
 
     int dt = 1;
     int F4_Col = 0;
-    double ax = 0.5, ay = 0.5;
+    double ax = 0, ay = 0.9;
     int score1 = 0, score2 = 0;
 
     HDC Fon = txLoadImage ("Pictures\\Fon.bmp");
