@@ -91,9 +91,9 @@ void MoveBall()
         plaer1 .Control (&ball1, &F4_Col);
         plaer2 .Control (&ball2, &F4_Col);
 
-        ball1 .Physics (&score1, &score2, dt);
-        ball2 .Physics (&score1, &score2, dt);
-        ball3 .Physics (&score1, &score2, dt);
+        //ball1 .Physics (&score1, &score2, ax, ay, dt);
+        //ball2 .Physics (&score1, &score2, dt);
+        ball3 .Physics (&score1, &score2, ax, ay, dt);
 
         CollisionBall (&ball1, &ball3);//проверка столкновения
         CollisionBall (&ball2, &ball3);
