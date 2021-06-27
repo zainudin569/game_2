@@ -39,7 +39,7 @@ struct Ball
     COLORREF Color;
     COLORREF FillColor;
 
-    void Physics (int* score1, int* score2, int dt);
+    void Physics (int* score1, int* score2, int ax, int ay, int dt);
     void Drow();
     };
 
@@ -175,7 +175,7 @@ void Key::Control (Ball* ball, int* F4_Col)
 
 //---------------------------------------------------------------------------------
 
-void Ball::Physics (int* score1, int* score2, int dt)
+void Ball::Physics (int* score1, int* score2, int ax, int ay, int dt)
     {
     int W_org   = W;
     int W_org_2 = 0;
