@@ -21,5 +21,5 @@ C:\Users\zainu\Desktop\курс\game_2\Ozhaev Zaynudin Game_2.cpp:279:44: warning: c
          d = sqrt (Dx*Dx + Dy*Dy); if (d == 0) d=0.01;
                                             ^
 ---------------------------------------------------------------------------------------------
-[27.06.2021 11:19:30,55 C:\Users\zainu@DESKTOP-ZAINU, returned 0]
+[27.06.2021 11:20:47,74 C:\Users\zainu@DESKTOP-ZAINU, returned 0]
 C:\Users\zainu\Desktop\курс\game_2> g++.exe "C:\Users\zainu\Desktop\курс\game_2\Ozhaev Zaynudin Game_2.cpp" -o "C:\Users\zainu\Desktop\курс\game_2\Ozhaev Zaynudin Game_2.exe"  -Wshadow -Winit-self -Wredundant-decls -Wcast-align -Wundef -Wfloat-equal -Winline -Wunreachable-code -Wmissing-declarations -Wmissing-include-dirs -Wswitch-enum -Wswitch-default -Weffc++ -Wmain -Wextra -Wall -g -pipe -fexceptions -Wcast-qual -Wconversion -Wctor-dtor-privacy -Wempty-body -Wformat-security -Wformat=2 -Wignored-qualifiers -Wlogical-op -Wmissing-field-initializers -Wnon-virtual-dtor -Woverloaded-virtual -Wpointer-arith -Wsign-promo -Wstack-usage=8192 -Wstrict-aliasing -Wstrict-null-sentinel -Wtype-limits -Wwrite-strings -D_DEBUG -D_EJUDGE_CLIENT_SIDE -D_EJC

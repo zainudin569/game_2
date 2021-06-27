@@ -61,7 +61,7 @@ void MoveBall()
                    RGB(50 + rand() % 200, 50 + rand() % 200, 50 + rand() % 200),
                    RGB(50 + rand() % 200, 50 + rand() % 200, 50 + rand() % 200) };
 
-    Ball ball3 = { W/2,  rand() % H, 1 + rand() % 9, 1 + rand() % 9,
+    Ball ball3 = { 900,  500, 0, 0,
                    25,
                    0,
                    RGB(50 + rand() % 200, 50 + rand() % 200, 50 + rand() % 200),
